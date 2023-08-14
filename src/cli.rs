@@ -206,6 +206,7 @@ async fn get_deployment_data(
                         nodes = {{
                           "{0}" = deploy.nodes."{0}" // {{
                             profiles = {{
+                              system = "aarch64-linux";
                               inherit (deploy.nodes."{0}".profiles) "{1}";
                             }};
                           }};
